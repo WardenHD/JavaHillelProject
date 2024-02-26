@@ -1,16 +1,18 @@
-package org.wardenhd.window;
+// Deprecated
 
-import javax.swing.*;
+//package org.wardenhd.window;
 
-public class WindowManager {
-    JFrame frame;
+//import javax.swing.*;
 
-    public static void init(JFrame frame) {
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+//public class WindowManager {
+    //JFrame frame;
 
-    }
+    //public static void init(JFrame frame) {
+        //frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-    private void setupComponents() {
+    //}
 
-    }
-}
+    //private void setupComponents() {
+
+    //}
+//}
