@@ -1,18 +1,38 @@
-// Deprecated
+package org.wardenhd.window;
 
-//package org.wardenhd.window;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.beans.PropertyChangeListener;
 
-//import javax.swing.*;
+public class WindowManager {
+    final JFrame frame;
 
-//public class WindowManager {
-    //JFrame frame;
+    public WindowManager(JFrame frame) {
+        this.frame = frame;
+    }
 
-    //public static void init(JFrame frame) {
-        //frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+    public void createWindow() {
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        addComponents();
+        frame.setPreferredSize(new Dimension(320, 200));
+        frame.pack();
+        frame.setVisible(true);
 
-    //}
+    }
 
-    //private void setupComponents() {
+    private void addComponents() {
+        Container frameContentPane = frame.getContentPane();
 
-    //}
-//}
+        JButton addButton = new JButton("ADD");
+        frameContentPane.add(addButton, BorderLayout.AFTER_LAST_LINE);
+
+        addButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+    }
+}
